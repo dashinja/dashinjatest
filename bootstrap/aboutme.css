@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024) {
+    .text-dark {
+        font: #eee;
+    }
+
+    .bg-light {
+        background-color: #333;
+    }
+}

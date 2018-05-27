@@ -1,0 +1,17 @@
+body {
+    background-color: green;
+}
+
+.box {
+    background-color: #444;
+    padding: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+        background-color: #eee;
+        padding: 200px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
