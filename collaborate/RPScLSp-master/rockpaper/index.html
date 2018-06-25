@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPScLSp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Faster+One|Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="color: #5fc5ba; background-color: #15133c; font-family: 'Righteous', cursive;">
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-2 col-s-2 col-md-2 col-lg-2 col-xl-2 text-center">
+                <div class="row">
+                    <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12 col-xl-12 align-center">
+                        <h2 style="font-family: 'Faster One', cursive;">CHOOSE YOUR WEAPON!</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Image broken into individual divs to make buttons out of image sections-->
+            <div class="col-xs-8 col-ms-8 col-md-8 col-lg-8 col-xl-8" style="padding: 0px;">
+                
+                <div class="row" style="padding: 0px; margin: -1px;">
+                    
+                    <div class="col-xs-pull-1 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return fKeyPress()" src="images/rpsclsp-sliced_01.png">   
+                    </div>
+                    
+                    <div class="col-xs-1 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return rKeyPress()" src="images/rpsclsp-sliced_02.png" alt="rock">                      
+                    </div>
+                    
+                    <div class="col-xs-push-1 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return fKeyPress()" src="images/rpsclsp-sliced_03.png">
+                    </div>
+                    
+                </div>
+                    
+                <div class="row" style="padding: 0px; margin: -1px;">
+                        
+                    <div class="col-xs-4 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return pKeyPress()" src="images/rpsclsp-sliced_04.png" alt="paper">
+                    </div>
+                        
+                    <div class="col-xs-4 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return fKeyPress()" src="images/rpsclsp-sliced_05.png">
+                    </div>
+                        
+                    <div class="col-xs-4 col-ms-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0;">
+                        <img class="img-fluid" onClick="return lKeyPress()" src="images/rpsclsp-sliced_06.png" alt="lizard">
+                    </div>
+                        
+                </div>
+                                
+                <div class="row" style="padding: 0px; margin: -1px;">
+                                
+                    <div class="col-xs-6 col-ms-6 col-md-6 col-lg-6 col-xl-6" style="padding: 0;">
+                        <img class="img-fluid" onClick="return sKeyPress()" src="images/rpsclsp-sliced_07.png" alt="scissors">       
+                    </div>
+                                    
+                    <div class="col-xs-6 col-ms-6 col-md-6 col-lg-6 col-xl-6" style="padding: 0;">
+                        <img class="img-fluid" onClick="return zKeyPress()" src="images/rpsclsp-sliced_08.png" alt="spock">
+                    </div>
+                            
+                </div>
+
+
+
+                <!--Old image with html image mapping-->
+                <!-- <img class="img-fluid" src="images/rockpaperscissorslizardspock_newthumb.png" usemap="rpsclsp" alt="rock paper scissors lizard spock diagram">
+                <map id="rpsclsp" map name="rpsclsp">
+                    <area onClick="return rKeyPress()" shape="circle" alt="rock" title="" coords="500,232,120" href="" target="" />
+                    <area onClick="return pKeyPress()" shape="circle" alt="paper" title="" coords="220,447,120" href="" target="" />
+                    <area onClick="return sKeyPress()" shape="circle" alt="scissors" title="" coords="329,764,120" href="" target="" />
+                    <area onClick="return lKeyPress()" shape="circle" alt="lizard" title="" coords="776,448,122" href="" target="" />
+                    <area onClick="return zKeyPress()" shape="circle" alt="spock" title="" coords="671,763,123" href="" target="" />
+                </map> -->
+
+            </div>
+            
+            <div class="col-xs-2 col-ms-2 col-md-2 col-lg-2 col-xl-2 align-center" id="game-results">
+                        <!--Intentionally left blank for game results content to be added-->
+            </div>
+        </div>
+
+        <!--Old buttons for mobile play before image slicing-->
+<!-- 
+        <div class="row">
+
+            <div class="col-lg-4">
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="row spacer">
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-info btn-block" onClick="return rKeyPress()">rock</button>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-info btn-block" onClick="return pKeyPress()">paper</button>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-info btn-block" onClick="return sKeyPress()">scissors</button>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-info btn-block" onClick="return lKeyPress()">lizard</button>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-info btn-block" onClick="return zKeyPress()">spock</button>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-danger btn-block" onClick="return fKeyPress()">other</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+            </div>
+
+        </div> -->
+    
+    </div>
+
+    <script>
+    
+    alert("DOCTOR! It is a battle for your life!");
+    alert("Rock, Paper, Scissors, Lizard, Spock!");
+    alert("Make your selection by clicking the image.");
+    alert("Choose wisely, warrior. Even the Oncoming Storm must be precise.");
+
+    // creating an array with all of the possible computer choices
+    var computerOptions = ["r", "p", "s", "l", "z"];
+        // r = rock
+        // p = paper
+        // s = scissors
+        // l = lizard
+        // z = spock
+
+    // Creating variables to hold the number of wins, losses, and ties. All scores will begin at 0.
+    var victories = 0;
+    var defeats = 0;
+    var compromises = 0;
+
+    // Detect number of times user presses wrong keys. Value is set to zero to begin.
+    var wrongKey = 0;
+
+    // function being run whenever the user presses a key
+    document.onkeydown = function(event) {
+
+        // Determining which key was pressed by the user
+        var userSelection = event.key;
+
+        // Generating the computer choice by randomly selecting a choice from the computerOptions array.
+        var computerSelection = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+
+        //Only run the following code block if the user does not press the proper key to play.
+        if ((userSelection != "r") && (userSelection != "p") && (userSelection != "s") && (userSelection != "l") && (userSelection != "z")) {
+            
+            // alerts generated upon the first press of the wrong key.
+            if (wrongKey <= 0){
+            alert("THIS IS ROCK, PAPER, SCISSORS, LIZARD, SPOCK! CHOOSE ONLY FROM THE OPTIONS PROVIDED!");
+            alert("CHEATERS WILL BE EXTERMINATED!");
+            alert("THERE WILL BE NO FURTHER WARNINGS!");
+            wrongKey++;
+            }
+                // if the user presses the wrong key twice, the Daleks show up.
+                else if (wrongKey >= 1){
+                    alert("EXTERMINATE!");
+                    alert("EXTERMINATE!");
+                    window.close();
+                }
+        }
+
+        //Only run the following code block if the user presses r, p, s, l, or z.
+        if ((userSelection === "r") || (userSelection === "p") || (userSelection === "s") || (userSelection === "l") || (userSelection === "z")) {
+
+                //showdown is the match of computer v user, comparison of choices
+
+
+                if (userSelection === computerSelection) {
+                    
+                    compromises++;
+                }
+
+
+                    // victory
+                    else if (
+                        // rock victories
+                        ((userSelection === "r") && (computerSelection === "s")) || 
+                        ((userSelection === "r") && (computerSelection === "l")) || 
+                        
+                        // paper victories
+                        ((userSelection === "p") && (computerSelection === "r")) || 
+                        ((userSelection === "p") && (computerSelection === "z")) || 
+
+                        // scissors victories
+                        ((userSelection === "s") && (computerSelection === "l")) || 
+                        ((userSelection === "s") && (computerSelection === "p")) || 
+
+                        // lizard victories
+                        ((userSelection === "l") && (computerSelection === "p")) || 
+                        ((userSelection === "l") && (computerSelection === "z")) || 
+
+                        // spock victories
+                        ((userSelection === "z") && (computerSelection === "r")) || 
+                        ((userSelection === "z") && (computerSelection === "s"))
+                        
+                        ) {
+                            alert("VICTORY!");
+                            victories++;
+                        }
+
+                            // defeats
+                            else if (
+                            // rock defeats
+                            ((userSelection === "r") && (computerSelection === "p")) || 
+                            ((userSelection === "r") && (computerSelection = "z")) || 
+                            
+                            // paper defeats
+                            ((userSelection === "p") && (computerSelection === "l")) || 
+                            ((userSelection === "p") && (computerSelection === "s")) || 
+
+                            // scissors defeats
+                            ((userSelection === "s") && (computerSelection === "z")) || 
+                            ((userSelection === "s") && (computerSelection === "r")) || 
+
+                            // lizard defeats
+                            ((userSelection === "l") && (computerSelection === "r")) || 
+                            ((userSelection === "l") && (computerSelection === "s")) || 
+
+                            // spock defeats
+                            ((userSelection === "z") && (computerSelection === "p")) || 
+                            ((userSelection === "z") && (computerSelection === "l"))
+                            
+                            ) {
+                                defeats++;
+                            }
+
+
+
+            // creating a variable to hold our new HTML. Our HTML now keeps track of the user and computer guesses, and wins/losses
+            var html = 
+            "<p>The Doctor has chosen <strong><h5>" + userSelection + "</h5></strong></p>" +
+            "<p>The machine has chosen <strong><h5>" + computerSelection + "</h5></strong></p>" +
+            "<p>VICTORIES <strong><h5>" + victories + "</h5></strong></p>" +
+            "<p>DEFEATS <strong><h5>" + defeats + "</h5></strong></p>" +
+            "<p>COMPROMISES <strong><h5>" + compromises + "</h5></strong></p>";
+
+            // set the inner HTML contents of the #game-results div to our html string
+            document.querySelector("#game-results").innerHTML = html;
+
+        }
+
+    };
+
+    function rKeyPress(){
+    var r = new Event("keydown");
+    r.key="r"; // r key on click
+    document.dispatchEvent(r);
+    }
+
+    function pKeyPress(){
+    var p = new Event("keydown");
+    p.key="p"; // p key on click
+    document.dispatchEvent(p);
+    }
+
+    function sKeyPress(){
+    var s = new Event("keydown");
+    s.key="s"; // s key on click
+    document.dispatchEvent(s);
+    }
+
+    function lKeyPress(){
+    var l = new Event("keydown");
+    l.key="l"; // l key on click
+    document.dispatchEvent(l);
+    }
+
+    function zKeyPress(){
+    var z = new Event("keydown");
+    z.key="z"; // z key on click
+    document.dispatchEvent(z);
+    }
+
+    function fKeyPress(){
+    var f = new Event("keydown");
+    f.key="f"; // z key on click
+    document.dispatchEvent(f);
+    }
+
+    </script>
+
+</body>
+</html>

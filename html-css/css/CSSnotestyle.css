@@ -1,0 +1,99 @@
+body {
+	background: red; /*For backgrounds that don't support gradients*/
+	background: linear-gradient(to bottom right, red, yellow);
+}
+#Section {
+	font-size: 38px;
+	font-family: arial;
+	color: #777;
+	font-variant: small-caps;
+
+}
+
+.BlueSuede {
+	background-color: lightblue;
+	margin-right: 692px;
+
+}
+
+pre {
+	font-size: 18px;
+	text-align: justify;
+}
+
+#Explanatory_Block {
+	text-align: justify;
+}
+
+p.indent {
+	text-indent: 20px;
+}
+
+span.underline {
+	text-decoration: underline;
+}
+
+table#t01 {
+	width: 100%;
+	background-color: #f1f1c1;
+	border-collapse: collapse;
+	box-shadow: 6px 6px 4px grey;
+}
+
+table#t01 tr:nth-child(even) {
+	background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+table#t01 th {
+	background-color: black;
+	color: white;
+}
+td, th {
+	border: solid black 1px;
+	border-collapse: collapse;
+	/*background-color: lightgrey;*/
+	padding: 3px;
+}
+
+th {
+	text-align: left;
+}
+
+div.header {
+	font-weight: 900;
+	font-size: 48px;
+	font-family: times, courier, arial;
+	font-variant: small-caps;
+}
+
+div.content {
+	font-size: 14px;
+	font-family: times, courier, arial;
+	font-weight: medium;
+	text-decoration: none;
+}
+
+div.footer {
+	font-weight: 300;
+	font-family: times, courier, arial;
+	font-size: 12px;
+}
+
+caption {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: left;
+}
+
+div#cntr_img {
+	padding: 0px;
+	line-height: 0;
+}
+
+img.#cntr_img {
+	margin: 0 auto;
+}

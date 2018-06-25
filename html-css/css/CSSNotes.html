@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Byron's CSS Notes</title>
+	<link rel="stylesheet" type="text/css" href="CSSnotestyle.css">
+</head>
+<body>
+	<div id="cntr_img">
+		<img src="images/Godzilla top.jpg" alt="Godzilla Top" id="cntr_img">
+			<br id="cntr_img"/>
+		<img src="images/Godzilla.bmp" alt="Godzilla" id="cntr_img">
+	</div>
+		
+		<br/>
+		<br>
+	<div id="Explanatory_Block">
+		<div class="BlueSuede">
+			<h1 id="Section">Basic CSS Need to Know</h1>
+				<div>
+					<h2><a href="http://www.w3schools.com/css/css_syntax.asp" target="_blank">CSS Syntax</a></h2><br/>
+					<img src="http://www.w3schools.com/css/selector.gif" alt="Visual CSS Syntax" width="100%">
+				</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div style="background-color: lightgrey">
+		<h2><a href="http://www.w3schools.com/css/css_background.asp" target="_blank">CSS Background Shorthand</a></h2>
+		<pre>	Background has the following properties:
+		<!--I'm using the PRE tag here to show things exactly as I have written them. Turns out you actually
+		can make use of CSS styles even on the PRE tag. Check it out!-->
+		Background-Color
+		Background-Image
+		Background-Repeat
+		Background-Attachment
+		Background-Position
+
+		Background Short Hand Follows this Order: CIRAP monster (Sounds like "Syrup") and is denoted as the following:
+
+			selector {
+				background: C I R A P; <img src="images/jellomonster.gif" alt="CIRAP jellomonster">
+			}
+
+		where CIRAP monster is treated as a variable, and substituted into each of the places is the VALUE
+		of the given property, as opposed to a "property: value" pair as per usual.
+
+		An example of this with actual property values is as follows:
+			body {
+				background: red no-repeat fixed top right;
+			}
+
+		Notice, the property names are foregone on account of CSS parsers expecting a particular order of 
+		property VALUES given.
+		</pre>
+	</div>
+	<div>
+		<h2><a href="http://www.w3schools.com/cssref/pr_font_font-size.asp" target="_blank">CSS Font-Size</a></h2><br/>
+	</div>
+	<div>
+		<h2><a href="http://www.w3schools.com/css/css_text.asp" target="_blank">CSS Text</a></h2><br/>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<div class="header">CSS Text Properties</div>
+			<div class="content"><p>The css text property has at least 14 different variations. <b>Please Note:</b> that when using the color property it is best practice to also include a "background-color" specification as well, especially for W3C compliant css.</p>
+			<br>
+			<p><b>Please note:</b> The tag must be used immediately after the "table" tag.</p>
+			<p>
+				<table id="t01">
+					<caption>CSS Text Properties</caption>
+					<tr>
+						<th>Property</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>color</td>
+						<td>Sets the color of text</td>
+					</tr>
+					<tr>
+						<td>direction</td>
+						<td>Specifies the text direction/writing direction</td>
+					</tr>
+					<tr>
+						<td>letter-spacing</td>
+						<td>Increases or decreases</td>
+					</tr>
+					<tr>
+						<td>line-height</td>
+						<td>Sets the line height</td>
+					</tr>
+					<tr>
+						<td>text-align</td>
+						<td>Specifies the horizontal alignment of text</td>
+					</tr>
+					<tr>
+						<td>text-decoration</td>
+						<td>Specifies the decoration added to text</td>
+					</tr>
+					<tr>
+						<td>text-indent</td>
+						<td>Specifies the indentation of the first line in a text-block</td>
+					</tr>
+					<tr>
+						<td>text-shadow</td>
+						<td>Specifies the shadow effect added to text</td>
+					</tr>
+					<tr>
+						<td>text-transform</td>
+						<td>Controls the capitalization of text</td>
+					</tr>
+					<tr>
+						<td>text-overflow</td>
+						<td>Specifies how overflowed content that is not displayed should be signaled to the user</td>
+					</tr>
+					<tr>
+						<td>unicode-bidi</td>
+						<td>Used together with the <span class="underline">direction</span> property to set or return whether the text should be overriden to support multiple languages in the same document</td>
+					</tr>
+					<tr>
+						<td>vertical-align</td>
+						<td>Sets the vertical alignment of an element</td>
+					</tr>
+					<tr>
+						<td>white-space</td>
+						<td>Specifies how white-space inside an element is handled</td>
+					</tr>
+					<tr>
+						<td>word-spacing</td>
+						<td>Increases or decreases the space between words in a text</td>
+					</tr>
+				</table>
+			</p>
+			</div>
+		<div class="footer">Learn more about creating tables <a href="http://www.w3schools.com/html/html_tables.asp">here</a>
+		</div>
+	</div>
+</body>
+</html>
