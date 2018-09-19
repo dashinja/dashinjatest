@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>The DOM :D</title>
+    </head>
+    <body>
+        <h1>An h1</h1>
+        <p id="myId">I'm a paragraph, look at me!</p>
+        <h1 class="title second-h1" id="classesExample">Another h1</h1>
+        <h1>A third h1</h1>
+        <img src="https://codetheweb.blog/assets/img/posts/javascript-dom/llama.jpg">
+        <script>
+            document.querySelector('#myId').innerHTML += '<h2>I am now on the page!</h2>';
+            document.querySelector('img').setAttribute('src',
+            'https://codetheweb.blog/assets/img/posts/javascript-dom/llama-changed.jpg');
+            document.querySelector('h1').style.color = 'red';
+            document.querySelector('h1').style.fontSize = 66;
+            document.querySelector('h1').style.backgroundColor= 'black';
+            var elements = document.querySelectorAll('h1')
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.fontFamily = 'sans-serif';
+            }
+        </script>
+    </body>
+</html>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat quis sit asperiores non corrupti, totam temporibus eligendi quae soluta officiis nam dignissimos dolor aut fuga, labore culpa accusamus rerum.

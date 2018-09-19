@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dev Tools and the Console API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>Dev Tools and the Console API</h1>
+  <p class="normal-paragraph">Open up dev tools and we'll get to work!</p>
+ 
+  <script>
+      const kids = [{ name: 'Dean', age: 1 }, { name: 'Andy', age: 1 }, {name: 'Thea', age: 7}, {name:'Tessa', age: 9}];
+
+    // Regular
+   // console.log('hello');
+
+    // String Templates
+   // const name = "John"
+   // console.log(`${name} is a cool guy`)
+
+    // Styled
+    // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+
+    // warning!
+   // console.warn('hey, watch out...');
+
+    // Error :|
+    //console.error('why do you keep using == instead of ===  ?!?!');
+
+    // Testing
+
+    //console.assert(p.classList.contains('a-random-class'), 'That is wrong!');
+
+    // clearing
+    //console.clear();
+
+    // Grouping together
+   /*
+    kids.forEach(kid => {
+      console.groupCollapsed(`${kid.name}`);
+      console.log(`This is ${kid.name}`);
+      console.log(`${kid.name} is ${kid.age} years old`);
+      console.groupEnd(`${kid.name}`);
+    });
+*/
+    
+    // counting
+
+   // console.count('this');
+
+
+    // timing
+    /*
+    console.time('fetching data');
+    fetch('https://api.github.com/users/johndpotts')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      });
+      */
+
+   // console.table(kids);
+
+  </script>
+</body>
+</html>
